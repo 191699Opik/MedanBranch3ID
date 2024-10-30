@@ -1,36 +1,98 @@
+/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Gaya umum */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background-color: #333;
-  color: white;
+  background-color: #4CAF50;
+  padding: 20px;
   text-align: center;
-  padding: 15px 0;
+  color: white;
 }
 
-nav a {
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  font-weight: bold;
 }
 
 section {
-  background-color: white;
   padding: 20px;
-  margin-top: 20px;
+  margin: 10px 0;
+  background-color: white;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-  text-align: center;
-  margin-top: 20px;
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white; /* Ganti dengan warna yang sesuai */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav ul li ul {
+  display: none; /* Menyembunyikan dropdown secara default */
+  position: absolute;
+  top: 100%; /* Menampilkan di bawah item menu */
+  left: 0;
+  background-color: #333; /* Ganti warna sesuai kebutuhan */
+}
+
+nav ul li:hover ul {
+  display: block; /* Menampilkan dropdown saat hover */
+}
+
+nav ul li ul li {
+  margin: 0; /* Menghapus margin untuk submenu */
 }
