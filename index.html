@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Pertama Saya</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Website Saya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
     <h1>Selamat Datang di Website Saya</h1>
     <nav>
       <a href="#">Beranda</a> | 
@@ -15,10 +38,18 @@
       <a href="#">Kontak</a>
     </nav>
   </header>
-
-  <section>
-    <h2>Konten Utama</h2>
-    <p>Website ini dibuat di iPhone menggunakan HTML, CSS, dan JavaScript.</p>
+<section class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Selamat Datang</h2>
+      <p>Website ini menggunakan Bootstrap untuk tampil lebih menarik dan responsif!</p>
+      <button class="btn btn-primary">Klik Saya</button>
+    </div>
+    <div class="col-md-6">
+      <img src="https://via.placeholder.com/400" alt="Gambar" class="img-fluid rounded">
+    </div>
+  </div>
+</section>
     <button onclick="tampilkanPesan()">Klik Saya</button>
   </section>
 
